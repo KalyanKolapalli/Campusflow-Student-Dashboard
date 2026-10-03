@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #f4f2ed;
+  color: #18221f;
+  font-family: "DM Sans", sans-serif;
+}
+main {
+  max-width: 960px;
+  margin: auto;
+  padding: 32px 22px 70px;
+}
+header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.brand {
+  background: #1b382d;
+  color: #fff;
+  border-radius: 14px;
+  padding: 12px 15px;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.brand span {
+  color: #e4ff74;
+}
+header div {
+  flex: 1;
+}
+h1,
+h2,
+p {
+  margin: 0;
+}
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  font-weight: bold;
+  color: #66736d;
+}
+.avatar {
+  border: 0;
+  background: #e7ba9c;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+.hero {
+  margin-top: 35px;
+  min-height: 280px;
+  display: flex;
+  justify-content: space-between;
+  padding: 42px;
+  border-radius: 28px;
+  background: #d8f05a;
+  overflow: hidden;
+  position: relative;
+}
+.hero h2,
+.deadline h2 {
+  font:
+    600 clamp(32px, 6vw, 58px) / 0.97 "Playfair Display",
+    serif;
+  margin: 13px 0;
+}
+.hero em {
+  font-family: "DM Sans";
+  font-style: normal;
+}
+.hero button {
+  margin-top: 26px;
+  background: #1b382d;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  padding: 13px 19px;
+  font-weight: bold;
+}
+.orb {
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 30% 30%,
+    #ff9866,
+    #ed5281 43%,
+    #563bad 75%
+  );
+  display: grid;
+  place-items: center;
+  font-size: 70px;
+  color: #fff;
+  transform: rotate(-18deg);
+  box-shadow: 25px 30px 0 #c6db4e;
+}
+nav {
+  display: flex;
+  gap: 26px;
+  margin: 30px 0;
+}
+nav button,
+.section-title button {
+  border: 0;
+  background: transparent;
+  color: #66736d;
+  font: 500 14px inherit;
+  padding: 0;
+}
+nav .active {
+  color: #18221f;
+  font-weight: bold;
+  border-bottom: 2px solid #18221f;
+  padding-bottom: 7px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 22px;
+}
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.section-title h2 {
+  font-size: 20px;
+}
+article {
+  background: #fff;
+  padding: 17px;
+  margin-bottom: 10px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 6px 20px #263b3210;
+}
+time {
+  font-weight: bold;
+  font-size: 15px;
+}
+article div {
+  flex: 1;
+}
+article span {
+  font-size: 12px;
+  color: #758078;
+  display: block;
+  margin-top: 4px;
+}
+i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.peach {
+  background: #f27c57;
+}
+.blue {
+  background: #719dff;
+}
+.yellow {
+  background: #e5bd23;
+}
+aside {
+  background: #1b382d;
+  color: #fff;
+  padding: 24px;
+  border-radius: 20px;
+}
+aside .section-title h2 {
+  color: white;
+}
+.rings {
+  border: 17px solid #d9f061;
+  border-left-color: #648057;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  margin: 25px auto 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rings strong {
+  font-size: 23px;
+}
+.rings span,
+aside p {
+  font-size: 12px;
+  color: #d1dacb;
+}
+.deadline {
+  margin-top: 22px;
+  background: #e4b69a;
+  border-radius: 22px;
+  padding: 27px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.deadline button {
+  font-size: 25px;
+  border: 0;
+  background: #fff;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+.toast {
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translate(-50%, 100px);
+  background: #18221f;
+  color: #fff;
+  padding: 14px 20px;
+  border-radius: 12px;
+  transition: 0.35s;
+}
+.toast.show {
+  transform: translate(-50%, 0);
+}
+@media (max-width: 620px) {
+  main {
+    padding: 22px 16px;
+  }
+  .hero {
+    padding: 30px 24px;
+  }
+  .orb {
+    width: 120px;
+    height: 120px;
+    font-size: 40px;
+    align-self: end;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .hero h2 {
+    font-size: 42px;
+  }
+  nav {
+    justify-content: space-between;
+    gap: 0;
+  }
+}

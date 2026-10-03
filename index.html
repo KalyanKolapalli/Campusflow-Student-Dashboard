@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>CampusFlow</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <a class="brand" href="#">C<span>F</span></a>
+        <div>
+          <p class="eyebrow">Tuesday, 14 October</p>
+          <h1>Good morning, Aravind.</h1>
+        </div>
+        <button class="avatar" aria-label="Open profile">A</button>
+      </header>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">NEXT UP</p>
+          <h2>Human-centred<br />Design <em>→</em></h2>
+          <p>10:00–11:30 · Creative Studio 2</p>
+          <button id="checkIn">Check in</button>
+        </div>
+        <div class="orb" aria-hidden="true">✦</div>
+      </section>
+      <nav aria-label="Main navigation">
+        <button class="active">Today</button><button>Schedule</button
+        ><button>Map</button><button>More</button>
+      </nav>
+      <section class="grid">
+        <section class="agenda">
+          <div class="section-title">
+            <h2>Your day</h2>
+            <button>View all</button>
+          </div>
+          <article>
+            <time>10:00</time>
+            <div>
+              <b>Human-centred Design</b><span>Creative Studio 2 · 90 min</span>
+            </div>
+            <i class="peach"></i>
+          </article>
+          <article>
+            <time>13:00</time>
+            <div>
+              <b>Research Methods</b
+              ><span>North Building · Lecture Theatre A</span>
+            </div>
+            <i class="blue"></i>
+          </article>
+          <article>
+            <time>16:00</time>
+            <div><b>Design Society</b><span>Library café · Meetup</span></div>
+            <i class="yellow"></i>
+          </article>
+        </section>
+        <aside>
+          <div class="section-title">
+            <h2>Keep moving</h2>
+            <button aria-label="More wellness information">···</button>
+          </div>
+          <div class="rings">
+            <strong>7,840</strong><span>steps today</span>
+          </div>
+          <p>Two deadlines this week. You have 3 hours free tomorrow.</p>
+        </aside>
+      </section>
+      <section class="deadline">
+        <div>
+          <p class="eyebrow">DUE IN 3 DAYS</p>
+          <h2>Service design<br />case study</h2>
+        </div>
+        <button aria-label="Open case study">↗</button>
+      </section>
+    </main>
+    <div class="toast" role="status" aria-live="polite">
+      You’re checked in. Have a great class!
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
